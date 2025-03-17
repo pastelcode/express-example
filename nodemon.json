@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "ignore": ["src/**/*.spec.ts"],
+  "exec": "concurrently 'pnpm exec tsc --watch' 'pnpm exec ts-node src/index.ts'"
+}
