@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "30d50198-f8e0-4949-adc6-6e091f11f534",
+		"name": "Books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43156476"
+	},
+	"item": [
+		{
+			"name": "Get all books",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/books",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get book by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/books/3cd85da8-9a3e-4597-aee1-87b73f2c564d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"3cd85da8-9a3e-4597-aee1-87b73f2c564d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Moby Dick\",\n    \"author\": \"Herman Melville\",\n    \"genre\": \"Epic novel\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"author\": \"Me\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books/add794b0-8c7a-4770-afda-75572ad69972",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"add794b0-8c7a-4770-afda-75572ad69972"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"yo\": \"Me\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/books/add794b0-8c7a-4770-afda-75572ad69972",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"add794b0-8c7a-4770-afda-75572ad69972"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
